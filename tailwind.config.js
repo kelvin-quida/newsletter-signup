@@ -8,11 +8,22 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'gradient-radiallll': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',        
       },
+      backgroundColor:{
+        'dark-slate-gray':
+          'hsl(235, 18%, 26%)'
+      },
+      colors:{
+        'text':
+        'hsl(234, 29%, 20%)'
+      }
     },
   },
-  plugins: [],
+  daisyui: {
+    themes: ["light", "dark", "cupcake"],
+  },
+  plugins: [require("daisyui")],
 }
